@@ -1,0 +1,85 @@
+2025-01-29 14:33:14,487 - logger - INFO - Starting up FastAPI application
+2025-01-29 14:33:36,835 - logger - INFO - Incoming request to: /auth/signin
+2025-01-29 14:33:36,950 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-29 14:33:37,180 - logger - INFO - Generating JWT for user with payload: {'username': 'username4', 'exp': datetime.datetime(2025, 1, 29, 21, 3, 37, 180229, tzinfo=datetime.timezone.utc)}, secret_key: JWT_SECRET_KEY, algo: HS256
+2025-01-29 14:33:37,180 - logger - INFO - Generated JWT for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODE4NDYxN30.MBQYvyay8sIJAVX5CmWMJA2tQeQv86C_Yo27iOAb4dw
+2025-01-29 14:33:37,180 - logger - INFO - Decoding Generating JWT for user with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODE4NDYxN30.MBQYvyay8sIJAVX5CmWMJA2tQeQv86C_Yo27iOAb4dw, secret_key: JWT_SECRET_KEY, algo: HS256
+2025-01-29 14:33:37,180 - logger - WARNING - Invalid JWT token attempt for username4
+2025-01-29 14:35:25,678 - logger - INFO - Shutting down FastAPI application
+2025-01-29 14:35:26,122 - logger - INFO - Starting up FastAPI application
+2025-01-29 14:35:36,444 - logger - INFO - Incoming request to: /auth/signin
+2025-01-29 14:35:36,477 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-29 14:35:36,684 - logger - INFO - Generating JWT for user with payload: {'username': 'username4', 'exp': datetime.datetime(2025, 1, 29, 21, 5, 36, 684756, tzinfo=datetime.timezone.utc)}, secret_key: JWT_SECRET_KEY, algo: HS256
+2025-01-29 14:35:36,684 - logger - INFO - Generated JWT for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODE4NDczNn0.dNEEwVfmbgcCRgLhkZxySVOw5VPSOcE94vOzi5iNsAE
+2025-01-29 14:35:36,684 - logger - INFO - Decoding Generating JWT for user with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODE4NDczNn0.dNEEwVfmbgcCRgLhkZxySVOw5VPSOcE94vOzi5iNsAE, secret_key: JWT_SECRET_KEY, algo: HS256
+2025-01-29 14:35:36,685 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 14:36:33,280 - logger - INFO - Shutting down FastAPI application
+2025-01-29 14:36:33,717 - logger - INFO - Starting up FastAPI application
+2025-01-29 14:36:48,037 - logger - INFO - Incoming request to: /questions
+2025-01-29 14:36:48,038 - logger - INFO - Getting JWT Token from headers : Headers({'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODE4NDczNn0.dNEEwVfmbgcCRgLhkZxySVOw5VPSOcE94vOzi5iNsAE', 'user-agent': 'PostmanRuntime/7.43.0', 'accept': '*/*', 'postman-token': '4948173c-daf7-4ba6-a579-64d285f2aeca', 'host': 'localhost:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive'})
+2025-01-29 14:36:48,038 - logger - INFO - Successfully got JWT Token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODE4NDczNn0.dNEEwVfmbgcCRgLhkZxySVOw5VPSOcE94vOzi5iNsAE
+2025-01-29 14:36:48,038 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 14:36:48,040 - logger - INFO - Incoming request to: /questions/
+2025-01-29 14:36:48,040 - logger - INFO - Getting JWT Token from headers : Headers({'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODE4NDczNn0.dNEEwVfmbgcCRgLhkZxySVOw5VPSOcE94vOzi5iNsAE', 'user-agent': 'PostmanRuntime/7.43.0', 'accept': '*/*', 'postman-token': '4948173c-daf7-4ba6-a579-64d285f2aeca', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/questions', 'host': 'localhost:8000'})
+2025-01-29 14:36:48,040 - logger - INFO - Successfully got JWT Token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODE4NDczNn0.dNEEwVfmbgcCRgLhkZxySVOw5VPSOcE94vOzi5iNsAE
+2025-01-29 14:36:48,040 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 15:35:40,965 - logger - INFO - Shutting down FastAPI application
+2025-01-29 15:35:41,443 - logger - INFO - Starting up FastAPI application
+2025-01-29 15:35:50,850 - logger - INFO - Shutting down FastAPI application
+2025-01-29 15:35:51,310 - logger - INFO - Starting up FastAPI application
+2025-01-29 15:35:58,696 - logger - INFO - Shutting down FastAPI application
+2025-01-29 15:35:59,049 - logger - INFO - Starting up FastAPI application
+2025-01-29 15:36:11,291 - logger - INFO - Shutting down FastAPI application
+2025-01-29 15:36:11,732 - logger - INFO - Starting up FastAPI application
+2025-01-29 15:36:59,670 - logger - INFO - Shutting down FastAPI application
+2025-01-29 15:37:00,033 - logger - INFO - Starting up FastAPI application
+2025-01-29 17:25:10,750 - logger - INFO - Shutting down FastAPI application
+2025-01-29 17:25:11,231 - logger - INFO - Starting up FastAPI application
+2025-01-29 18:17:39,355 - logger - INFO - Incoming request to: /auth/signin
+2025-01-29 18:17:39,428 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-29 18:17:52,928 - logger - INFO - Incoming request to: /questions
+2025-01-29 18:17:52,929 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:17:52,932 - logger - INFO - Incoming request to: /questions/
+2025-01-29 18:17:52,933 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:20:15,674 - logger - INFO - Shutting down FastAPI application
+2025-01-29 18:20:16,128 - logger - INFO - Starting up FastAPI application
+2025-01-29 18:20:40,305 - logger - INFO - Incoming request to: /questions
+2025-01-29 18:20:40,305 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:20:40,307 - logger - INFO - Incoming request to: /questions/
+2025-01-29 18:20:40,307 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:20:40,341 - logger - INFO - Got all questions from DB [<models.Questions object at 0x103834100>, <models.Questions object at 0x103834160>, <models.Questions object at 0x103834190>, <models.Questions object at 0x1038341c0>, <models.Questions object at 0x1038341f0>, <models.Questions object at 0x1038342b0>, <models.Questions object at 0x103834130>, <models.Questions object at 0x103834310>, <models.Questions object at 0x103834370>, <models.Questions object at 0x1038343d0>, <models.Questions object at 0x103834430>]
+2025-01-29 18:22:31,947 - logger - INFO - Shutting down FastAPI application
+2025-01-29 18:22:32,402 - logger - INFO - Starting up FastAPI application
+2025-01-29 18:22:38,808 - logger - INFO - Incoming request to: /questions
+2025-01-29 18:22:38,808 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:22:38,809 - logger - INFO - Incoming request to: /questions/
+2025-01-29 18:22:38,809 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:22:38,810 - logger - INFO - Init /questions
+2025-01-29 18:22:38,841 - logger - INFO - Got all questions from DB [<models.Questions object at 0x107e95100>, <models.Questions object at 0x107e95160>, <models.Questions object at 0x107e95190>, <models.Questions object at 0x107e951c0>, <models.Questions object at 0x107e951f0>, <models.Questions object at 0x107e952b0>, <models.Questions object at 0x107e95130>, <models.Questions object at 0x107e95310>, <models.Questions object at 0x107e95370>, <models.Questions object at 0x107e953d0>, <models.Questions object at 0x107e95430>]
+2025-01-29 18:28:14,834 - logger - INFO - Shutting down FastAPI application
+2025-01-29 18:28:15,293 - logger - INFO - Starting up FastAPI application
+2025-01-29 18:28:22,699 - logger - INFO - Incoming request to: /questions
+2025-01-29 18:28:22,699 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:28:22,701 - logger - INFO - Incoming request to: /questions/
+2025-01-29 18:28:22,701 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:28:22,702 - logger - INFO - Init /questions
+2025-01-29 18:28:22,735 - logger - INFO - Got all questions from DB [<models.Questions object at 0x105fdb100>, <models.Questions object at 0x105fdb160>, <models.Questions object at 0x105fdb190>, <models.Questions object at 0x105fdb1c0>, <models.Questions object at 0x105fdb1f0>, <models.Questions object at 0x105fdb2b0>, <models.Questions object at 0x105fdb130>, <models.Questions object at 0x105fdb310>, <models.Questions object at 0x105fdb370>, <models.Questions object at 0x105fdb3d0>, <models.Questions object at 0x105fdb430>]
+2025-01-29 18:28:35,058 - logger - INFO - Incoming request to: /questions
+2025-01-29 18:28:35,058 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:28:35,060 - logger - INFO - Incoming request to: /questions/
+2025-01-29 18:28:35,061 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-29 18:28:35,065 - logger - INFO - Init /questions
+2025-01-29 18:28:35,071 - logger - INFO - Got all questions from DB [<models.Questions object at 0x106169e20>, <models.Questions object at 0x106169e80>, <models.Questions object at 0x106169eb0>, <models.Questions object at 0x106169ee0>, <models.Questions object at 0x106169f10>, <models.Questions object at 0x106169fd0>, <models.Questions object at 0x106169e50>, <models.Questions object at 0x106171070>, <models.Questions object at 0x1061710a0>, <models.Questions object at 0x1061710d0>, <models.Questions object at 0x106171100>]
+2025-01-30 11:15:17,720 - logger - INFO - Shutting down FastAPI application

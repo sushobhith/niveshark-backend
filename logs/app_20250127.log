@@ -1,0 +1,80 @@
+2025-01-27 21:36:10,875 - logger - INFO - Incoming request url: http://localhost:8000/auth/signup
+2025-01-27 21:36:10,875 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 21:39:28,959 - logger - INFO - Starting up FastAPI application
+2025-01-27 21:39:30,680 - logger - INFO - Shutting down FastAPI application
+2025-01-27 21:39:31,038 - logger - INFO - Starting up FastAPI application
+2025-01-27 21:40:58,825 - logger - INFO - Shutting down FastAPI application
+2025-01-27 21:40:59,224 - logger - INFO - Starting up FastAPI application
+2025-01-27 21:40:59,933 - logger - INFO - Shutting down FastAPI application
+2025-01-27 21:41:00,285 - logger - INFO - Starting up FastAPI application
+2025-01-27 21:41:13,183 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 21:41:13,188 - logger - INFO - Signup attempt for username: 
+2025-01-27 21:41:20,871 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 21:41:20,873 - logger - INFO - Signup attempt for username: 
+2025-01-27 21:52:46,203 - logger - INFO - Shutting down FastAPI application
+2025-01-27 21:52:47,998 - logger - INFO - Starting up FastAPI application
+2025-01-27 21:52:59,028 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 21:52:59,031 - logger - INFO - Signup attempt for username: 
+2025-01-27 21:58:53,619 - logger - INFO - Shutting down FastAPI application
+2025-01-27 21:58:55,336 - logger - INFO - Starting up FastAPI application
+2025-01-27 21:59:12,631 - logger - INFO - Shutting down FastAPI application
+2025-01-27 21:59:14,710 - logger - INFO - Starting up FastAPI application
+2025-01-27 21:59:22,454 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 21:59:22,457 - logger - INFO - Signup attempt for username: username
+2025-01-27 22:31:56,953 - logger - INFO - Shutting down FastAPI application
+2025-01-27 22:31:58,734 - logger - INFO - Starting up FastAPI application
+2025-01-27 22:32:12,179 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 22:32:12,182 - logger - INFO - Signup attempt for username: username
+2025-01-27 22:32:12,478 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-27 22:41:40,393 - logger - INFO - Shutting down FastAPI application
+2025-01-27 22:41:40,852 - logger - INFO - Starting up FastAPI application
+2025-01-27 22:48:58,441 - logger - INFO - Shutting down FastAPI application
+2025-01-27 22:48:58,893 - logger - INFO - Starting up FastAPI application
+2025-01-27 22:49:04,557 - logger - INFO - Shutting down FastAPI application
+2025-01-27 22:49:06,185 - logger - INFO - Starting up FastAPI application
+2025-01-27 22:49:12,525 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 22:49:12,527 - logger - INFO - Signup attempt for username: username
+2025-01-27 22:49:12,568 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-27 22:51:05,847 - logger - INFO - Shutting down FastAPI application
+2025-01-27 22:51:06,300 - logger - INFO - Starting up FastAPI application
+2025-01-27 22:51:54,605 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 22:51:54,609 - logger - INFO - Signup attempt for username: username2
+2025-01-27 22:51:54,651 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-27 22:51:54,881 - logger - INFO - Successfully created new user: username2
+2025-01-27 22:52:15,136 - logger - INFO - Shutting down FastAPI application
+2025-01-27 22:52:15,577 - logger - INFO - Starting up FastAPI application
+2025-01-27 22:52:36,227 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 22:52:36,232 - logger - INFO - Signup attempt for username: username3
+2025-01-27 22:52:36,278 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-27 22:52:36,507 - logger - INFO - Successfully created new user: username3
+2025-01-27 22:52:55,335 - logger - INFO - Shutting down FastAPI application
+2025-01-27 22:52:55,849 - logger - INFO - Starting up FastAPI application
+2025-01-27 22:52:59,694 - logger - INFO - Shutting down FastAPI application
+2025-01-27 22:53:00,067 - logger - INFO - Starting up FastAPI application
+2025-01-27 22:53:01,485 - logger - INFO - Shutting down FastAPI application
+2025-01-27 22:53:01,853 - logger - INFO - Starting up FastAPI application
+2025-01-27 22:53:19,802 - logger - INFO - Incoming request to: /auth/signup
+2025-01-27 22:53:19,808 - logger - INFO - Signup attempt for username: username4
+2025-01-27 22:53:19,851 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-27 22:53:20,072 - logger - INFO - Successfully created new user: username4
+2025-01-27 22:54:14,388 - logger - INFO - Incoming request to: /auth/signin

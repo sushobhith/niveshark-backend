@@ -1,0 +1,203 @@
+2025-01-30 11:15:18,208 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:15:23,163 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:15:23,515 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:15:25,236 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:15:25,586 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:15:46,630 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:15:46,978 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:15:59,760 - logger - INFO - Incoming request to: /auth/signin
+2025-01-30 11:15:59,821 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-30 11:16:14,767 - logger - INFO - Incoming request to: /questions
+2025-01-30 11:16:14,768 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:16:14,771 - logger - INFO - Incoming request to: /questions/
+2025-01-30 11:16:14,772 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:16:14,783 - logger - INFO - Got all questions from DB <models.Questions object at 0x1047b9880>
+2025-01-30 11:17:27,641 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:17:27,999 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:17:33,901 - logger - INFO - Incoming request to: /questions
+2025-01-30 11:17:33,901 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:17:33,902 - logger - INFO - Incoming request to: /questions/
+2025-01-30 11:17:33,902 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:17:33,935 - logger - INFO - Got question_text How do you want to invest your money ?
+2025-01-30 11:17:33,935 - logger - INFO - Got question_text RADIO_BUTTON
+2025-01-30 11:17:33,935 - logger - INFO - Got question_text ['SIP', 'ONE TIME']
+2025-01-30 11:18:58,436 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:18:58,792 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:19:06,232 - logger - INFO - Incoming request to: /questions
+2025-01-30 11:19:06,233 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:19:06,236 - logger - INFO - Incoming request to: /questions/
+2025-01-30 11:19:06,236 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:19:06,276 - logger - INFO - Got question_text How do you want to invest your money ?
+2025-01-30 11:19:06,276 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:19:06,276 - logger - INFO - Got possible_answers ['SIP', 'ONE TIME']
+2025-01-30 11:19:06,276 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:19:23,796 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:19:24,153 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:21:52,435 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:21:52,791 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:21:59,438 - logger - INFO - Incoming request to: /questions
+2025-01-30 11:21:59,439 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:21:59,442 - logger - INFO - Incoming request to: /questions/
+2025-01-30 11:21:59,442 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:21:59,485 - logger - INFO - Got question_text How do you want to invest your money ?
+2025-01-30 11:21:59,485 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:21:59,485 - logger - INFO - Got possible_answers ['SIP', 'ONE TIME']
+2025-01-30 11:21:59,485 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:21:59,485 - logger - INFO - Got question_text How much amount do you want to invest ?
+2025-01-30 11:21:59,485 - logger - INFO - Got question_type INPUT_NUMBER
+2025-01-30 11:21:59,485 - logger - INFO - Got possible_answers None
+2025-01-30 11:21:59,485 - logger - INFO - Got possible_answers type <class 'NoneType'>
+2025-01-30 11:23:22,407 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:23:22,765 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:23:26,293 - logger - INFO - Incoming request to: /questions
+2025-01-30 11:23:26,293 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:23:26,294 - logger - INFO - Incoming request to: /questions/
+2025-01-30 11:23:26,294 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:23:26,324 - logger - INFO - Got question_text How do you want to invest your money ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers ['SIP', 'ONE TIME']
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:23:26,325 - logger - INFO - Got question_text How much amount do you want to invest ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type INPUT_NUMBER
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers None
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers type <class 'NoneType'>
+2025-01-30 11:23:26,325 - logger - INFO - Got question_text How regular is your income ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers ['Regular monthly income', 'Irregular monthly income', 'No monthly income']
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:23:26,325 - logger - INFO - Got question_text Do you own a house ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers ['Yes', 'No']
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:23:26,325 - logger - INFO - Got question_text What %age of your annual income do you save ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers ['Less than 10%', 'Less than 20%', 'Less than 30%', 'Greater than or equal to 30%']
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:23:26,325 - logger - INFO - Got question_text What %age of your annual income goes into the EMI ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers ['Less than 10%', 'Less than 20%', 'Less than 40%', 'Greater than 40%']
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:23:26,325 - logger - INFO - Got question_text What is your investing experience in mutual funds and stocks ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers ['Never invested', 'Started less than 3 years back', 'Investing from last 10 years to 3 years', 'Investing for more than 10 years', 'I have stopped investing']
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:23:26,325 - logger - INFO - Got question_text What %age of your investment is in FD, PDF, NSC etc. ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers ['Less than 20%', 'Between 20-30%', 'Between 40-50%', 'Greater than 60%']
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:23:26,325 - logger - INFO - Got question_text How often do you check the current value (or returns) of your portfolio ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers ['Everyday', '4 to 5 times a month', 'Every month', '4 to 5 times a year']
+2025-01-30 11:23:26,325 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:23:26,325 - logger - INFO - Got question_text In which of the potential scenario you would take corrective action ?
+2025-01-30 11:23:26,325 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,326 - logger - INFO - Got possible_answers ['Portfolio is down 10%', 'Portfolio is down 20%', 'Portfolio is down 30%', 'Portfolio is down more than 40%', 'None of the above']
+2025-01-30 11:23:26,326 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:23:26,326 - logger - INFO - Got question_text What portfolio strategy would you like to have ?
+2025-01-30 11:23:26,326 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:23:26,326 - logger - INFO - Got possible_answers ['Preserve principal amount even if post tax growth is below inflation', 'Preserve principal amount with post tax growth at par with inflation', 'Achieve moderate growth (8% to 9%) with a risk of temporary loss (15% to 20%) in portfolio', 'Achieve high growth (10% to 12%) with a risk of temporary loss (20% to 30%) in portfolio', 'Maximise growth woth a risk of temporary loss (30% to 60%) in portfolio']
+2025-01-30 11:23:26,326 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:24:48,124 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:24:48,482 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:24:52,526 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:24:52,881 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:25:13,211 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:25:13,562 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:25:19,523 - logger - INFO - Incoming request to: /questions
+2025-01-30 11:25:19,524 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:25:19,527 - logger - INFO - Incoming request to: /questions/
+2025-01-30 11:25:19,527 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:25:19,570 - logger - INFO - Got question_text How do you want to invest your money ?
+2025-01-30 11:25:19,570 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:25:19,570 - logger - INFO - Got possible_answers ['SIP', 'ONE TIME']
+2025-01-30 11:25:19,570 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:25:54,119 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:25:54,476 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:26:05,528 - logger - INFO - Incoming request to: /questions
+2025-01-30 11:26:05,528 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:26:05,529 - logger - INFO - Incoming request to: /questions/
+2025-01-30 11:26:05,529 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:26:05,563 - logger - INFO - Got question_text How do you want to invest your money ?
+2025-01-30 11:26:05,563 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:05,563 - logger - INFO - Got possible_answers ['SIP', 'ONE TIME']
+2025-01-30 11:26:05,563 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:05,563 - logger - INFO - Got possible_answers position 1
+2025-01-30 11:26:05,563 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:17,342 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:26:17,705 - logger - INFO - Starting up FastAPI application
+2025-01-30 11:26:36,231 - logger - INFO - Incoming request to: /questions
+2025-01-30 11:26:36,232 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:26:36,235 - logger - INFO - Incoming request to: /questions/
+2025-01-30 11:26:36,236 - logger - INFO - Successfully decoded JWT for user: username4
+2025-01-30 11:26:36,277 - logger - INFO - Got question_text How do you want to invest your money ?
+2025-01-30 11:26:36,277 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,277 - logger - INFO - Got possible_answers ['SIP', 'ONE TIME']
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position 1
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,278 - logger - INFO - Got question_text How much amount do you want to invest ?
+2025-01-30 11:26:36,278 - logger - INFO - Got question_type INPUT_NUMBER
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers None
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers type <class 'NoneType'>
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position 2
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,278 - logger - INFO - Got question_text How regular is your income ?
+2025-01-30 11:26:36,278 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers ['Regular monthly income', 'Irregular monthly income', 'No monthly income']
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position 3
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,278 - logger - INFO - Got question_text Do you own a house ?
+2025-01-30 11:26:36,278 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers ['Yes', 'No']
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position 4
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,278 - logger - INFO - Got question_text What %age of your annual income do you save ?
+2025-01-30 11:26:36,278 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers ['Less than 10%', 'Less than 20%', 'Less than 30%', 'Greater than or equal to 30%']
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position 5
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,278 - logger - INFO - Got question_text What %age of your annual income goes into the EMI ?
+2025-01-30 11:26:36,278 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers ['Less than 10%', 'Less than 20%', 'Less than 40%', 'Greater than 40%']
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position 6
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,278 - logger - INFO - Got question_text What is your investing experience in mutual funds and stocks ?
+2025-01-30 11:26:36,278 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers ['Never invested', 'Started less than 3 years back', 'Investing from last 10 years to 3 years', 'Investing for more than 10 years', 'I have stopped investing']
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,278 - logger - INFO - Got possible_answers position 7
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,279 - logger - INFO - Got question_text What %age of your investment is in FD, PDF, NSC etc. ?
+2025-01-30 11:26:36,279 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers ['Less than 20%', 'Between 20-30%', 'Between 40-50%', 'Greater than 60%']
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers position 8
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,279 - logger - INFO - Got question_text How often do you check the current value (or returns) of your portfolio ?
+2025-01-30 11:26:36,279 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers ['Everyday', '4 to 5 times a month', 'Every month', '4 to 5 times a year']
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers position 9
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,279 - logger - INFO - Got question_text In which of the potential scenario you would take corrective action ?
+2025-01-30 11:26:36,279 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers ['Portfolio is down 10%', 'Portfolio is down 20%', 'Portfolio is down 30%', 'Portfolio is down more than 40%', 'None of the above']
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers position 10
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:36,279 - logger - INFO - Got question_text What portfolio strategy would you like to have ?
+2025-01-30 11:26:36,279 - logger - INFO - Got question_type RADIO_BUTTON
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers ['Preserve principal amount even if post tax growth is below inflation', 'Preserve principal amount with post tax growth at par with inflation', 'Achieve moderate growth (8% to 9%) with a risk of temporary loss (15% to 20%) in portfolio', 'Achieve high growth (10% to 12%) with a risk of temporary loss (20% to 30%) in portfolio', 'Maximise growth woth a risk of temporary loss (30% to 60%) in portfolio']
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers type <class 'list'>
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers position 11
+2025-01-30 11:26:36,279 - logger - INFO - Got possible_answers position type <class 'int'>
+2025-01-30 11:26:50,176 - logger - INFO - Shutting down FastAPI application
+2025-01-30 11:26:50,531 - logger - INFO - Starting up FastAPI application

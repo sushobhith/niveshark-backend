@@ -1,0 +1,105 @@
+2025-01-28 15:01:57,162 - logger - INFO - Starting up FastAPI application
+2025-01-28 15:12:57,198 - logger - INFO - Shutting down FastAPI application
+2025-01-28 15:12:57,628 - logger - INFO - Starting up FastAPI application
+2025-01-28 15:13:01,674 - logger - INFO - Shutting down FastAPI application
+2025-01-28 15:13:17,246 - logger - INFO - Starting up FastAPI application
+2025-01-28 15:13:19,371 - logger - INFO - Shutting down FastAPI application
+2025-01-28 15:13:19,727 - logger - INFO - Starting up FastAPI application
+2025-01-28 15:23:37,247 - logger - INFO - Shutting down FastAPI application
+2025-01-28 15:23:37,690 - logger - INFO - Starting up FastAPI application
+2025-01-28 17:55:50,278 - logger - INFO - Shutting down FastAPI application
+2025-01-28 17:55:50,732 - logger - INFO - Starting up FastAPI application
+2025-01-28 17:57:08,604 - logger - INFO - Shutting down FastAPI application
+2025-01-28 17:57:09,054 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:01:20,570 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:01:21,018 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:22:46,462 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:22:46,909 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:34:25,438 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:34:25,893 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:35:30,922 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:35:31,348 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:40:01,949 - logger - INFO - Incoming request to: /auth/signin
+2025-01-28 18:40:02,002 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-28 18:41:16,782 - logger - INFO - Incoming request to: /questions
+2025-01-28 18:41:16,783 - logger - WARNING - Invalid JWT token attempt for /questions
+2025-01-28 18:42:56,006 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:42:56,454 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:43:17,695 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:43:18,120 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:44:13,947 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:44:14,391 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:44:19,918 - logger - INFO - Incoming request to: /questions
+2025-01-28 18:44:19,918 - logger - WARNING - Invalid JWT token attempt for /questions
+2025-01-28 18:44:58,492 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:44:58,921 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:45:07,391 - logger - INFO - Incoming request to: /questions
+2025-01-28 18:45:07,391 - logger - WARNING - Invalid JWT token attempt for /questions
+2025-01-28 18:45:27,446 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:45:27,896 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:45:35,464 - logger - INFO - Incoming request to: /questions
+2025-01-28 18:45:35,464 - logger - INFO - Getting JWT Token from headers : Headers({'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODExMzAwMn0.Tks-joIcQF3Yv6Q3R0NHA8uy090FZev1GBOwvQYab_8', 'user-agent': 'PostmanRuntime/7.43.0', 'accept': '*/*', 'postman-token': '471b48c3-4340-4e49-88bb-d600d77ee6b1', 'host': 'localhost:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive'})
+2025-01-28 18:45:35,464 - logger - INFO - Successfully got JWT Token : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODExMzAwMn0.Tks-joIcQF3Yv6Q3R0NHA8uy090FZev1GBOwvQYab_8
+2025-01-28 18:45:35,465 - logger - WARNING - Invalid JWT token attempt for /questions
+2025-01-28 18:50:19,822 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:50:20,268 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:50:27,703 - logger - INFO - Incoming request to: /questions
+2025-01-28 18:50:27,703 - logger - INFO - Getting JWT Token from headers : Headers({'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODExMzAwMn0.Tks-joIcQF3Yv6Q3R0NHA8uy090FZev1GBOwvQYab_8', 'user-agent': 'PostmanRuntime/7.43.0', 'accept': '*/*', 'postman-token': '7935bb4f-daec-4a82-9488-3c199570b690', 'host': 'localhost:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive'})
+2025-01-28 18:50:27,703 - logger - INFO - Successfully got JWT Token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODExMzAwMn0.Tks-joIcQF3Yv6Q3R0NHA8uy090FZev1GBOwvQYab_8
+2025-01-28 18:50:27,703 - logger - WARNING - Invalid JWT token attempt for /questions
+2025-01-28 18:51:13,065 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:51:13,495 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:52:11,854 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:52:12,307 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:53:58,807 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:53:59,257 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:54:34,759 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:54:35,152 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:56:59,882 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:57:45,552 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:57:45,555 - logger - INFO - Incoming request to: /auth/signin
+2025-01-28 18:57:45,604 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-28 18:58:41,078 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:58:41,443 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:58:46,658 - logger - INFO - Incoming request to: /auth/signin
+2025-01-28 18:58:46,696 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-28 18:58:46,911 - logger - WARNING - Invalid JWT token attempt for username4
+2025-01-28 18:59:51,942 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:59:52,303 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:59:53,315 - logger - INFO - Shutting down FastAPI application
+2025-01-28 18:59:53,672 - logger - INFO - Starting up FastAPI application
+2025-01-28 18:59:57,632 - logger - INFO - Incoming request to: /auth/signin
+2025-01-28 18:59:57,667 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-28 18:59:57,880 - logger - INFO - Generating JWT for user: username4
+2025-01-28 18:59:57,881 - logger - INFO - Generated JWT for user: username4
+2025-01-28 18:59:57,881 - logger - WARNING - Invalid JWT token attempt for username4
+2025-01-28 19:02:05,667 - logger - INFO - Shutting down FastAPI application
+2025-01-28 19:02:06,099 - logger - INFO - Starting up FastAPI application
+2025-01-28 19:02:21,676 - logger - INFO - Shutting down FastAPI application
+2025-01-28 19:02:22,030 - logger - INFO - Starting up FastAPI application
+2025-01-28 19:02:27,558 - logger - INFO - Incoming request to: /auth/signin
+2025-01-28 19:02:27,608 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/padfoot/Documents/projects/niveshark-backend/venv/lib/python3.9/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-01-28 19:02:27,823 - logger - INFO - Generating JWT for user with payload: {'username': 'username4', 'exp': datetime.datetime(2025, 1, 29, 1, 32, 27, 823246, tzinfo=datetime.timezone.utc)}, secret_key: JWT_SECRET_KEY, algo: HS256
+2025-01-28 19:02:27,823 - logger - INFO - Generated JWT for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODExNDM0N30.Cbg8dF_BurqNV0hCCR7xdhLbi0Jubj7Y8Zka6gfUF4k
+2025-01-28 19:02:27,823 - logger - INFO - Decoding Generating JWT for user with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImV4cCI6MTczODExNDM0N30.Cbg8dF_BurqNV0hCCR7xdhLbi0Jubj7Y8Zka6gfUF4k, secret_key: JWT_SECRET_KEY, algo: HS256
+2025-01-28 19:02:27,823 - logger - WARNING - Invalid JWT token attempt for username4
