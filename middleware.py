@@ -1,13 +1,17 @@
 from fastapi import Request
 from dotenv import load_dotenv
+from fastapi.responses import JSONResponse
+from logger import logger
+
 import time
 import os
 import jwt
 import json
-from fastapi.responses import JSONResponse
-from logger import logger
+import redis 
 
 load_dotenv()
+
+r = redis.Redis(host="localhost", port=6379, db=0)
 
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM")
@@ -47,15 +51,30 @@ async def validate_request_json(request: Request, call_next):
 async def validate_jwt_auth(request: Request, call_next):
 
   path = request.url.path
-  headers = request.headers
+  # headers = request.headers
   
-  logger.info(f"Incoming request to: {path}")
+  # logger.info(f"Incoming request to: {path}")
+  body = await request.body()  # Read the request body
+  logger.info(f"Incoming request method: {request.method}, URL: {request.url}, Body: {body.decode('utf-8')}")
+  # logger.info(f"Incoming request is:  {type(request)}")
 
-  if path.startswith("/auth"):
+  if path.startswith("/auth") and not(path.startswith("/auth/signout")):
     logger.debug("Skipping auth for /auth endpoints")
     return (await call_next(request))
   else:
-    token = headers.get("Authorization").replace("Bearer ", "")
+    token = request.cookies.get("jwt_token")
+
+    if not token:
+      return JSONResponse(
+            content={"message": "Token not found!"},
+            status_code=401
+        )
+    # token = headers.get("Authorization").replace("Bearer ", "")
+    if r.exists(token):
+      return JSONResponse(
+        content={"message": "User signed out!"},
+        status_code=401
+      )
     try:
       decoded = jwt.decode(token, JWT_SECRET_KEY, algorithms=[JWT_ALGORITHM])
       logger.info(f"Successfully decoded JWT for user: {decoded.get('username')}")

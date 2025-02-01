@@ -1,4 +1,5 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, Request, Response
+from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 from pydantic import BaseModel
@@ -11,14 +12,18 @@ from logger import logger
 
 import os
 import jwt
+import redis
 
 load_dotenv()
 
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM")
+COOKIE_NAME = "jwt_token"
 
 # Create the APIRouter instance
 router = APIRouter()
+
+r = redis.Redis(host="localhost", port=6379, db=0)
 
 # Password hashing context
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -38,7 +43,7 @@ class SignInRequest(BaseModel):
 class AuthResponse(BaseModel):
   username: str
   message: str
-  token: str
+  # token: str
 
 # ---------------------------
 # Helper Functions
@@ -63,7 +68,7 @@ def generate_jwt_token(username: str, secret_key: str, algorithm:str) -> str:
 # ---------------------------
 
 @router.post("/signup", response_model=AuthResponse)
-def sign_up(payload: SignUpRequest, db: Session = Depends(get_db)):
+def sign_up(response: Response, payload: SignUpRequest, db: Session = Depends(get_db)):
   logger.info(f"Signup attempt for username: {payload.username}")
   
   existing_user = db.query(User).filter(User.username == payload.username).first()
@@ -85,19 +90,26 @@ def sign_up(payload: SignUpRequest, db: Session = Depends(get_db)):
   db.commit()
   db.refresh(new_user)
 
-  token_payload = generate_jwt_token(new_user.username)
-  token = jwt.encode(token_payload, JWT_SECRET_KEY, algorithm=JWT_ALGORITHM)
+  token = generate_jwt_token(new_user.username, JWT_SECRET_KEY, JWT_ALGORITHM)
+
+  response.set_cookie(
+      key="jwt_token",
+      value=token,
+      httponly=True, 
+      secure=False, ## Change in PROD
+      samesite="lax" ## Change in PROD
+  )
 
   logger.info(f"Successfully created new user: {payload.username}")
 
   return AuthResponse(
     username=new_user.username,
     message="User created successfully.",
-    token=token
+    # token=token
   )
 
 @router.post("/signin", response_model=AuthResponse)
-def sign_in(payload: SignInRequest, db: Session = Depends(get_db)):
+def sign_in(response: Response, payload: SignInRequest, db: Session = Depends(get_db)):
 
   user = db.query(User).filter(User.username == payload.username).first()
   if not user or not verify_password(payload.password, user.password_hash):
@@ -108,8 +120,58 @@ def sign_in(payload: SignInRequest, db: Session = Depends(get_db)):
   
   token = generate_jwt_token(user.username, JWT_SECRET_KEY, JWT_ALGORITHM)
 
+  response.set_cookie(
+      key="jwt_token",
+      value=token,
+      httponly=True, 
+      secure=False, ## Change in PROD
+      samesite="lax" ## Change in PROD
+  )
+
   return AuthResponse(
     username=user.username,
     message="Sign in successful.",
-    token=token
+    # token=token
   )
+
+
+@router.get("/signout")
+def sign_out(request: Request):
+  headers = request.headers
+  # token = headers.get("Authorization").replace("Bearer ", "")
+  token = request.cookies.get("jwt_token")
+
+  if not token:
+    return JSONResponse(
+          content={"message": "Token not found!"},
+          status_code=401
+      )
+  try:
+    decoded = jwt.decode(token, JWT_SECRET_KEY, algorithms=[JWT_ALGORITHM])
+  except jwt.ExpiredSignatureError:
+    # If it's already expired, no need to blacklist it
+    return JSONResponse(
+      content={"message": "Token has expired"},
+      status_code=401
+    )
+  except jwt.InvalidTokenError:
+    return JSONResponse(
+        content={"message": "Invalid token"},
+        status_code=401
+    )
+  
+  exp_timestamp = decoded["exp"]  # This is a Unix timestamp
+  now_timestamp = datetime.now(timezone.utc).timestamp()
+  ttl_seconds = int(exp_timestamp - now_timestamp)
+  if ttl_seconds < 0:
+    # Token is effectively expired
+    return JSONResponse(
+      content={"message": "Invalid token"},
+      status_code=401
+    )
+  
+  r.setex(token, ttl_seconds, "blacklisted")
+  return JSONResponse(
+      content={"message": "User signed out!"},
+      status_code=200
+    )

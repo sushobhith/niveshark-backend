@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from routers.auth import router as auth_router
 # from routers.finance import router as finance_router
@@ -13,6 +14,19 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down FastAPI application")
 
 app = FastAPI(lifespan=lifespan)
+
+origins = [
+    "http://localhost",  # Add your allowed origins here
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods, including OPTIONS
+    allow_headers=["*"],  # Allow all headers
+)
 
 @app.middleware("http")
 async def add_process_time_header_entrypoint(request, call_next):
