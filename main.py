@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from routers.auth import router as auth_router
-# from routers.finance import router as finance_router
+from routers.portfolio import router as portfolio_router
 from routers.questions import router as questions_router
 from middleware import add_process_time_header, validate_request_json, validate_jwt_auth
 from logger import logger
@@ -43,4 +43,6 @@ async def validate_jwt_auth_entrypoint(request, call_next):
 app.include_router(auth_router, prefix="/auth", tags=["auth"])
 # app.include_router(finance_router, prefix="/finance", tags=["finance"])
 app.include_router(questions_router, prefix="/questions", tags=["questions"])
+app.include_router(portfolio_router, prefix="/portfolio", tags=["portfolio"])
+
 

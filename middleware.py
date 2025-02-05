@@ -77,6 +77,8 @@ async def validate_jwt_auth(request: Request, call_next):
       )
     try:
       decoded = jwt.decode(token, JWT_SECRET_KEY, algorithms=[JWT_ALGORITHM])
+
+      request.state.username = decoded.get('username')
       logger.info(f"Successfully decoded JWT for user: {decoded.get('username')}")
       
       return (await call_next(request))
